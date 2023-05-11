@@ -1,10 +1,12 @@
 import { Route, Routes } from "react-router-dom"
-import { HomePage } from "../components/pages/HomePage"
+import { HomeRoutes } from "../components/home/routes/HomeRoutes"
+import { BlogRoutes } from "../components/blogs/routes/BlogRoutes"
 
 export const BookstoreRouter = () => {
     return (
         <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<HomeRoutes />} />
+            <Route path="/blogs" element={<BlogRoutes />} />
         </Routes>
     )
 }

@@ -1,0 +1,33 @@
+.active-link {
+    scale: 1.5;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    scale: 1.2;
+}
+
+.heroBook {
+    width: 9rem;
+    cursor: pointer;
+    box-shadow: -5px 6px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -5px 6px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 6px 10px 0px rgba(0, 0, 0, 0.75);
+    transition: all 0.4s;
+}
+
+.heroBook:hover {
+    scale: 1.1;
+    transform: rotate(5deg);
+}
+
+.blogsImage {
+    width: inherit;
+    height: 10rem;
+    object-fit: contain;
+}
