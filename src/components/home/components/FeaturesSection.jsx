@@ -5,7 +5,7 @@ import React from 'react'
 export const FeaturesSection = () => {
     return (
         <Grid container sx={{ padding: '4rem 0', display: 'flex', justifyContent: 'space-evenly' }}>
-            <Grid item sx={3}>
+            <Grid item xs={3}>
                 <Box sx={{ display: 'flex', gap: 1 }}>
                     <LocalShipping sx={{ color: 'primary.main', fontSize: '4rem' }} />
                     <Box>
@@ -14,7 +14,7 @@ export const FeaturesSection = () => {
                     </Box>
                 </Box>
             </Grid>
-            <Grid item sx={3}>
+            <Grid item xs={3}>
                 <Box sx={{ display: 'flex', gap: 1 }}>
                     <Lock sx={{ color: 'primary.main', fontSize: '4rem' }} />
                     <Box>
@@ -23,7 +23,7 @@ export const FeaturesSection = () => {
                     </Box>
                 </Box>
             </Grid>
-            <Grid item sx={3}>
+            <Grid item xs={3}>
                 <Box sx={{ display: 'flex', gap: 1 }}>
                     <Replay sx={{ color: 'primary.main', fontSize: '4rem' }} />
                     <Box>
@@ -32,7 +32,7 @@ export const FeaturesSection = () => {
                     </Box>
                 </Box>
             </Grid>
-            <Grid item sx={3}>
+            <Grid item xs={3}>
                 <Box sx={{ display: 'flex', gap: 1 }}>
                     <HeadsetMic sx={{ color: 'primary.main', fontSize: '4rem' }} />
                     <Box>

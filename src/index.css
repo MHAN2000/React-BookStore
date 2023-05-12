@@ -26,6 +26,22 @@
     transform: rotate(5deg);
 }
 
+.bookContainer {
+    transition: all 0.2s;
+}
+
+.bookContainer:hover {
+    scale: 1.1;
+}
+
+.book {
+    width: 6rem;
+    cursor: pointer;
+    box-shadow: -5px 6px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -5px 6px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 6px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
 .blogsImage {
     width: inherit;
     height: 10rem;

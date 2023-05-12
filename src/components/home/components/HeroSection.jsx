@@ -8,7 +8,7 @@ export const HeroSection = () => {
     useEffect(() => {
         const typed = new Typed(heroDescription.current, {
             strings: ['Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa incidunt amet, architecto'],
-            typeSpeed: 50,
+            typeSpeed: 25,
             showCursor: false,
         });
         return () => typed.destroy()

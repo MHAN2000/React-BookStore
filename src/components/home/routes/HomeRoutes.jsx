@@ -7,11 +7,11 @@ import { AppNavBar } from '../../ui/AppNavBar'
 export const HomeRoutes = () => {
   return (
     <>
-        <AppSearchBar />
-        <AppNavBar />
-        <Routes>
-            <Route path="/" element={<HomePage />} />
-        </Routes>
+      <AppSearchBar />
+      <AppNavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </>
   )
 }

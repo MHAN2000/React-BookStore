@@ -9,18 +9,21 @@ import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import { Favorite, MenuBook, Person, ShoppingCart } from '@mui/icons-material';
 import InputAdornment from '@mui/material/InputAdornment';
+import { NavLink } from 'react-router-dom';
 
 export const AppSearchBar = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" sx={{ backgroundColor: 'white' }}>
                 <Toolbar sx={{ display: 'flex', justifyContent: 'space-around' }}>
-                    <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
-                        <MenuBook sx={{ color: '#27ae61' }} />
-                        <Typography variant="h6" noWrap component="div" sx={{ display: { xs: 'none', sm: 'block' }, textTransform: 'uppercase', color: '#676a62' }}>
-                            The lord of the books
-                        </Typography>
-                    </Box>
+                    <NavLink to="/">
+                        <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
+                            <MenuBook sx={{ color: '#27ae61' }} />
+                            <Typography variant="h6" noWrap component="div" sx={{ display: { xs: 'none', sm: 'block' }, textDecoration: 'none', textTransform: 'uppercase', color: '#676a62' }}>
+                                The lord of the books
+                            </Typography>
+                        </Box>
+                    </NavLink>
                     <TextField placeholder="Search here..." size="small" sx={{ width: "60%" }} InputProps={{
                         endAdornment: (
                             <InputAdornment position="end">
@@ -33,7 +36,7 @@ export const AppSearchBar = () => {
                             <Favorite sx={{ fontSize: '1.5rem' }} />
                         </IconButton>
                         <IconButton>
-                            <ShoppingCart sx={{fontSize: '1.5rem'}} />
+                            <ShoppingCart sx={{ fontSize: '1.5rem' }} />
                         </IconButton>
                         <IconButton>
                             <Person sx={{ fontSize: '1.5rem' }} />
